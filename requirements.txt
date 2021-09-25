@@ -3,3 +3,7 @@ pylint==2.10.2
 uvicorn==0.15.0
 jinja2
 nba_api
+pandas
+pytest-cov
+pytest
+black
