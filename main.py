@@ -1,11 +1,6 @@
-from fastapi import FastAPI
 from fastapi import FastAPI, Request
 from fastapi.templating import Jinja2Templates
 import uvicorn
-
-from nba_api.stats.static import players
-from nba_api.stats.endpoints import playercareerstats
-
 import pandas as pd
 # import os
 
@@ -29,7 +24,7 @@ async def search(request: Request, firstname: str, lastname: str):
     playername = firstname + " " + lastname
     
     html = getPlayerCareer(playername).to_html()
-    text_file = open("./htmlDirectory/df_representation.html", "w")
+    text_file = open("./htmlDirectory/df_representation.html", "w", encoding='UTF-8')
     text_file.write(html)
     text_file.close()
     
