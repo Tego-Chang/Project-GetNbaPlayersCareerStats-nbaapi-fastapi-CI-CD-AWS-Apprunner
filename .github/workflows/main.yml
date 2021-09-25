@@ -44,3 +44,6 @@ jobs:
       - name: Format code with Python black
         run: |
           make format
+      - name: Format code with Python black
+        run: |
+          python fetchNbaData.py
