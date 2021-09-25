@@ -44,6 +44,6 @@ jobs:
       - name: Format code with Python black
         run: |
           make format
-      - name: Fetch the latest NBA data
-        run: |
-          python fetchNbaData.py
+      # - name: Fetch the latest NBA data
+      #  run: |
+      #    python fetchNbaData.py
