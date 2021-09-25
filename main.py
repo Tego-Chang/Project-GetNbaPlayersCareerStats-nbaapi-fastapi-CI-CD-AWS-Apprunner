@@ -35,7 +35,7 @@ async def search(request: Request, firstname: str, lastname: str):
 
 if __name__ == '__main__':
     uvicorn.run(app, port = 8080, host = '0.0.0.0')
-    
+    print ("Test of Continuous Deployment!")
     ### Below is for local testing
     # cwd = os.getcwd()
     # os.chdir("./project1_nba/Get-player-s-career-data")
