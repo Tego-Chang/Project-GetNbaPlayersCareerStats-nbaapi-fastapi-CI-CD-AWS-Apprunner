@@ -12,5 +12,5 @@ if __name__ == '__main__':
     for player in active_player_dict:
         # print ("Downloading player data: " + player['full_name'])
         career = playercareerstats.PlayerCareerStats(player_id=player['id'])
-        career.get_data_frames()[0].to_csv("./playerdata_df/" + player['full_name'] + ".csv")
+        career.get_data_frames()[0].to_csv("./project1_fastAPI_CI_apprunner/Get-player-s-career-data/playerdata_df/" + player['full_name'] + ".csv")
         pass
